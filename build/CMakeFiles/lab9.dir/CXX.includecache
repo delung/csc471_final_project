@@ -1,0 +1,300 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../ext/glad/include/KHR/khrplatform.h
+stdint.h
+-
+inttypes.h
+-
+stdint.h
+-
+
+../ext/glad/include/glad/glad.h
+windows.h
+-
+stddef.h
+-
+KHR/khrplatform.h
+-
+inttypes.h
+-
+inttypes.h
+-
+inttypes.h
+-
+stdint.h
+-
+stdint.h
+-
+inttypes.h
+-
+
+/home/derek/Documents/CSC 471/lab09/src/GLSL.cpp
+GLSL.h
+/home/derek/Documents/CSC 471/lab09/src/GLSL.h
+stdio.h
+-
+stdlib.h
+-
+iostream
+-
+cstring
+-
+cassert
+-
+
+/home/derek/Documents/CSC 471/lab09/src/GLSL.h
+glad/glad.h
+-
+string
+-
+
+/home/derek/Documents/CSC 471/lab09/src/GLTextureWriter.cpp
+GLTextureWriter.h
+/home/derek/Documents/CSC 471/lab09/src/GLTextureWriter.h
+stb_image_write.h
+/home/derek/Documents/CSC 471/lab09/src/stb_image_write.h
+iostream
+-
+
+/home/derek/Documents/CSC 471/lab09/src/GLTextureWriter.h
+string
+-
+memory
+-
+Texture.h
+/home/derek/Documents/CSC 471/lab09/src/Texture.h
+GLFW/glfw3.h
+-
+
+/home/derek/Documents/CSC 471/lab09/src/MatrixStack.cpp
+MatrixStack.h
+/home/derek/Documents/CSC 471/lab09/src/MatrixStack.h
+glm/gtc/matrix_transform.hpp
+-
+
+/home/derek/Documents/CSC 471/lab09/src/MatrixStack.h
+stack
+-
+memory
+-
+glm/glm.hpp
+/home/derek/Documents/CSC 471/lab09/src/glm/glm.hpp
+glm/vec4.hpp
+/home/derek/Documents/CSC 471/lab09/src/glm/vec4.hpp
+glm/mat4x4.hpp
+/home/derek/Documents/CSC 471/lab09/src/glm/mat4x4.hpp
+glm/gtc/matrix_transform.hpp
+/home/derek/Documents/CSC 471/lab09/src/glm/gtc/matrix_transform.hpp
+
+/home/derek/Documents/CSC 471/lab09/src/Program.cpp
+Program.h
+/home/derek/Documents/CSC 471/lab09/src/Program.h
+iostream
+-
+cassert
+-
+fstream
+-
+GLSL.h
+/home/derek/Documents/CSC 471/lab09/src/GLSL.h
+
+/home/derek/Documents/CSC 471/lab09/src/Program.h
+map
+-
+string
+-
+glad/glad.h
+-
+
+/home/derek/Documents/CSC 471/lab09/src/Shape.cpp
+Shape.h
+/home/derek/Documents/CSC 471/lab09/src/Shape.h
+iostream
+-
+cassert
+-
+GLSL.h
+/home/derek/Documents/CSC 471/lab09/src/GLSL.h
+Program.h
+/home/derek/Documents/CSC 471/lab09/src/Program.h
+
+/home/derek/Documents/CSC 471/lab09/src/Shape.h
+string
+-
+vector
+-
+memory
+-
+glm/gtc/type_ptr.hpp
+-
+tiny_obj_loader.h
+/home/derek/Documents/CSC 471/lab09/src/tiny_obj_loader.h
+
+/home/derek/Documents/CSC 471/lab09/src/Terrain.cpp
+Terrain.h
+/home/derek/Documents/CSC 471/lab09/src/Terrain.h
+GLSL.h
+/home/derek/Documents/CSC 471/lab09/src/GLSL.h
+stdio.h
+-
+stdlib.h
+-
+iostream
+-
+stb_image.h
+/home/derek/Documents/CSC 471/lab09/src/stb_image.h
+
+/home/derek/Documents/CSC 471/lab09/src/Terrain.h
+iostream
+-
+glad/glad.h
+-
+vector
+-
+GLSL.h
+/home/derek/Documents/CSC 471/lab09/src/GLSL.h
+glm/gtc/type_ptr.hpp
+-
+glm/gtc/matrix_transform.hpp
+-
+
+/home/derek/Documents/CSC 471/lab09/src/Texture.cpp
+Texture.h
+/home/derek/Documents/CSC 471/lab09/src/Texture.h
+GLSL.h
+/home/derek/Documents/CSC 471/lab09/src/GLSL.h
+stdio.h
+-
+stdlib.h
+-
+iostream
+-
+stb_image.h
+/home/derek/Documents/CSC 471/lab09/src/stb_image.h
+
+/home/derek/Documents/CSC 471/lab09/src/Texture.h
+glad/glad.h
+-
+string
+-
+
+/home/derek/Documents/CSC 471/lab09/src/WindowManager.cpp
+WindowManager.h
+/home/derek/Documents/CSC 471/lab09/src/WindowManager.h
+GLSL.h
+/home/derek/Documents/CSC 471/lab09/src/GLSL.h
+iostream
+-
+
+/home/derek/Documents/CSC 471/lab09/src/WindowManager.h
+glad/glad.h
+-
+GLFW/glfw3.h
+-
+
+/home/derek/Documents/CSC 471/lab09/src/main.cpp
+iostream
+-
+glad/glad.h
+-
+GLSL.h
+/home/derek/Documents/CSC 471/lab09/src/GLSL.h
+Program.h
+/home/derek/Documents/CSC 471/lab09/src/Program.h
+MatrixStack.h
+/home/derek/Documents/CSC 471/lab09/src/MatrixStack.h
+Shape.h
+/home/derek/Documents/CSC 471/lab09/src/Shape.h
+WindowManager.h
+/home/derek/Documents/CSC 471/lab09/src/WindowManager.h
+GLTextureWriter.h
+/home/derek/Documents/CSC 471/lab09/src/GLTextureWriter.h
+Terrain.h
+/home/derek/Documents/CSC 471/lab09/src/Terrain.h
+glm/gtc/type_ptr.hpp
+-
+glm/gtc/matrix_transform.hpp
+-
+
+/home/derek/Documents/CSC 471/lab09/src/stb_image.h
+stb_image.h
+/home/derek/Documents/CSC 471/lab09/src/stb_image.h
+stdio.h
+-
+stdarg.h
+-
+stddef.h
+-
+stdlib.h
+-
+string.h
+-
+math.h
+-
+stdio.h
+-
+assert.h
+-
+stdint.h
+-
+emmintrin.h
+-
+intrin.h
+-
+arm_neon.h
+-
+
+/home/derek/Documents/CSC 471/lab09/src/stb_image_write.h
+stdio.h
+-
+stdarg.h
+-
+stdlib.h
+-
+string.h
+-
+math.h
+-
+assert.h
+-
+
+/home/derek/Documents/CSC 471/lab09/src/tiny_obj_loader.cpp
+cstdlib
+-
+cstring
+-
+cassert
+-
+cmath
+-
+cstddef
+-
+cctype
+-
+string
+-
+vector
+-
+map
+-
+fstream
+-
+sstream
+-
+tiny_obj_loader.h
+/home/derek/Documents/CSC 471/lab09/src/tiny_obj_loader.h
+
+/home/derek/Documents/CSC 471/lab09/src/tiny_obj_loader.h
+string
+-
+vector
+-
+map
+-
+
