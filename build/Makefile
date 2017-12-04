@@ -48,24 +48,13 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/home/derek/Documents/CSC 471/lab09"
+CMAKE_SOURCE_DIR = "/home/derek/Documents/CSC 471/csc471_final_project"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/home/derek/Documents/CSC 471/lab09/build"
+CMAKE_BINARY_DIR = "/home/derek/Documents/CSC 471/csc471_final_project/build"
 
 #=============================================================================
 # Targets provided globally by CMake.
-
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
 
 # Special rule for the target rebuild_cache
 rebuild_cache:
@@ -78,11 +67,22 @@ rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
 
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
+
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/home/derek/Documents/CSC 471/lab09/build/CMakeFiles" "/home/derek/Documents/CSC 471/lab09/build/CMakeFiles/progress.marks"
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/derek/Documents/CSC 471/csc471_final_project/build/CMakeFiles" "/home/derek/Documents/CSC 471/csc471_final_project/build/CMakeFiles/progress.marks"
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start "/home/derek/Documents/CSC 471/lab09/build/CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/derek/Documents/CSC 471/csc471_final_project/build/CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
@@ -111,17 +111,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named lab9
+# Target rules for targets named Final_Project
 
 # Build rule for target.
-lab9: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 lab9
-.PHONY : lab9
+Final_Project: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Final_Project
+.PHONY : Final_Project
 
 # fast build rule for target.
-lab9/fast:
-	$(MAKE) -f CMakeFiles/lab9.dir/build.make CMakeFiles/lab9.dir/build
-.PHONY : lab9/fast
+Final_Project/fast:
+	$(MAKE) -f CMakeFiles/Final_Project.dir/build.make CMakeFiles/Final_Project.dir/build
+.PHONY : Final_Project/fast
 
 ext/glad/src/glad.o: ext/glad/src/glad.c.o
 
@@ -129,7 +129,7 @@ ext/glad/src/glad.o: ext/glad/src/glad.c.o
 
 # target to build an object file
 ext/glad/src/glad.c.o:
-	$(MAKE) -f CMakeFiles/lab9.dir/build.make CMakeFiles/lab9.dir/ext/glad/src/glad.c.o
+	$(MAKE) -f CMakeFiles/Final_Project.dir/build.make CMakeFiles/Final_Project.dir/ext/glad/src/glad.c.o
 .PHONY : ext/glad/src/glad.c.o
 
 ext/glad/src/glad.i: ext/glad/src/glad.c.i
@@ -138,7 +138,7 @@ ext/glad/src/glad.i: ext/glad/src/glad.c.i
 
 # target to preprocess a source file
 ext/glad/src/glad.c.i:
-	$(MAKE) -f CMakeFiles/lab9.dir/build.make CMakeFiles/lab9.dir/ext/glad/src/glad.c.i
+	$(MAKE) -f CMakeFiles/Final_Project.dir/build.make CMakeFiles/Final_Project.dir/ext/glad/src/glad.c.i
 .PHONY : ext/glad/src/glad.c.i
 
 ext/glad/src/glad.s: ext/glad/src/glad.c.s
@@ -147,7 +147,7 @@ ext/glad/src/glad.s: ext/glad/src/glad.c.s
 
 # target to generate assembly for a file
 ext/glad/src/glad.c.s:
-	$(MAKE) -f CMakeFiles/lab9.dir/build.make CMakeFiles/lab9.dir/ext/glad/src/glad.c.s
+	$(MAKE) -f CMakeFiles/Final_Project.dir/build.make CMakeFiles/Final_Project.dir/ext/glad/src/glad.c.s
 .PHONY : ext/glad/src/glad.c.s
 
 src/GLSL.o: src/GLSL.cpp.o
@@ -156,7 +156,7 @@ src/GLSL.o: src/GLSL.cpp.o
 
 # target to build an object file
 src/GLSL.cpp.o:
-	$(MAKE) -f CMakeFiles/lab9.dir/build.make CMakeFiles/lab9.dir/src/GLSL.cpp.o
+	$(MAKE) -f CMakeFiles/Final_Project.dir/build.make CMakeFiles/Final_Project.dir/src/GLSL.cpp.o
 .PHONY : src/GLSL.cpp.o
 
 src/GLSL.i: src/GLSL.cpp.i
@@ -165,7 +165,7 @@ src/GLSL.i: src/GLSL.cpp.i
 
 # target to preprocess a source file
 src/GLSL.cpp.i:
-	$(MAKE) -f CMakeFiles/lab9.dir/build.make CMakeFiles/lab9.dir/src/GLSL.cpp.i
+	$(MAKE) -f CMakeFiles/Final_Project.dir/build.make CMakeFiles/Final_Project.dir/src/GLSL.cpp.i
 .PHONY : src/GLSL.cpp.i
 
 src/GLSL.s: src/GLSL.cpp.s
@@ -174,7 +174,7 @@ src/GLSL.s: src/GLSL.cpp.s
 
 # target to generate assembly for a file
 src/GLSL.cpp.s:
-	$(MAKE) -f CMakeFiles/lab9.dir/build.make CMakeFiles/lab9.dir/src/GLSL.cpp.s
+	$(MAKE) -f CMakeFiles/Final_Project.dir/build.make CMakeFiles/Final_Project.dir/src/GLSL.cpp.s
 .PHONY : src/GLSL.cpp.s
 
 src/GLTextureWriter.o: src/GLTextureWriter.cpp.o
@@ -183,7 +183,7 @@ src/GLTextureWriter.o: src/GLTextureWriter.cpp.o
 
 # target to build an object file
 src/GLTextureWriter.cpp.o:
-	$(MAKE) -f CMakeFiles/lab9.dir/build.make CMakeFiles/lab9.dir/src/GLTextureWriter.cpp.o
+	$(MAKE) -f CMakeFiles/Final_Project.dir/build.make CMakeFiles/Final_Project.dir/src/GLTextureWriter.cpp.o
 .PHONY : src/GLTextureWriter.cpp.o
 
 src/GLTextureWriter.i: src/GLTextureWriter.cpp.i
@@ -192,7 +192,7 @@ src/GLTextureWriter.i: src/GLTextureWriter.cpp.i
 
 # target to preprocess a source file
 src/GLTextureWriter.cpp.i:
-	$(MAKE) -f CMakeFiles/lab9.dir/build.make CMakeFiles/lab9.dir/src/GLTextureWriter.cpp.i
+	$(MAKE) -f CMakeFiles/Final_Project.dir/build.make CMakeFiles/Final_Project.dir/src/GLTextureWriter.cpp.i
 .PHONY : src/GLTextureWriter.cpp.i
 
 src/GLTextureWriter.s: src/GLTextureWriter.cpp.s
@@ -201,7 +201,7 @@ src/GLTextureWriter.s: src/GLTextureWriter.cpp.s
 
 # target to generate assembly for a file
 src/GLTextureWriter.cpp.s:
-	$(MAKE) -f CMakeFiles/lab9.dir/build.make CMakeFiles/lab9.dir/src/GLTextureWriter.cpp.s
+	$(MAKE) -f CMakeFiles/Final_Project.dir/build.make CMakeFiles/Final_Project.dir/src/GLTextureWriter.cpp.s
 .PHONY : src/GLTextureWriter.cpp.s
 
 src/MatrixStack.o: src/MatrixStack.cpp.o
@@ -210,7 +210,7 @@ src/MatrixStack.o: src/MatrixStack.cpp.o
 
 # target to build an object file
 src/MatrixStack.cpp.o:
-	$(MAKE) -f CMakeFiles/lab9.dir/build.make CMakeFiles/lab9.dir/src/MatrixStack.cpp.o
+	$(MAKE) -f CMakeFiles/Final_Project.dir/build.make CMakeFiles/Final_Project.dir/src/MatrixStack.cpp.o
 .PHONY : src/MatrixStack.cpp.o
 
 src/MatrixStack.i: src/MatrixStack.cpp.i
@@ -219,7 +219,7 @@ src/MatrixStack.i: src/MatrixStack.cpp.i
 
 # target to preprocess a source file
 src/MatrixStack.cpp.i:
-	$(MAKE) -f CMakeFiles/lab9.dir/build.make CMakeFiles/lab9.dir/src/MatrixStack.cpp.i
+	$(MAKE) -f CMakeFiles/Final_Project.dir/build.make CMakeFiles/Final_Project.dir/src/MatrixStack.cpp.i
 .PHONY : src/MatrixStack.cpp.i
 
 src/MatrixStack.s: src/MatrixStack.cpp.s
@@ -228,7 +228,7 @@ src/MatrixStack.s: src/MatrixStack.cpp.s
 
 # target to generate assembly for a file
 src/MatrixStack.cpp.s:
-	$(MAKE) -f CMakeFiles/lab9.dir/build.make CMakeFiles/lab9.dir/src/MatrixStack.cpp.s
+	$(MAKE) -f CMakeFiles/Final_Project.dir/build.make CMakeFiles/Final_Project.dir/src/MatrixStack.cpp.s
 .PHONY : src/MatrixStack.cpp.s
 
 src/Program.o: src/Program.cpp.o
@@ -237,7 +237,7 @@ src/Program.o: src/Program.cpp.o
 
 # target to build an object file
 src/Program.cpp.o:
-	$(MAKE) -f CMakeFiles/lab9.dir/build.make CMakeFiles/lab9.dir/src/Program.cpp.o
+	$(MAKE) -f CMakeFiles/Final_Project.dir/build.make CMakeFiles/Final_Project.dir/src/Program.cpp.o
 .PHONY : src/Program.cpp.o
 
 src/Program.i: src/Program.cpp.i
@@ -246,7 +246,7 @@ src/Program.i: src/Program.cpp.i
 
 # target to preprocess a source file
 src/Program.cpp.i:
-	$(MAKE) -f CMakeFiles/lab9.dir/build.make CMakeFiles/lab9.dir/src/Program.cpp.i
+	$(MAKE) -f CMakeFiles/Final_Project.dir/build.make CMakeFiles/Final_Project.dir/src/Program.cpp.i
 .PHONY : src/Program.cpp.i
 
 src/Program.s: src/Program.cpp.s
@@ -255,7 +255,7 @@ src/Program.s: src/Program.cpp.s
 
 # target to generate assembly for a file
 src/Program.cpp.s:
-	$(MAKE) -f CMakeFiles/lab9.dir/build.make CMakeFiles/lab9.dir/src/Program.cpp.s
+	$(MAKE) -f CMakeFiles/Final_Project.dir/build.make CMakeFiles/Final_Project.dir/src/Program.cpp.s
 .PHONY : src/Program.cpp.s
 
 src/Shape.o: src/Shape.cpp.o
@@ -264,7 +264,7 @@ src/Shape.o: src/Shape.cpp.o
 
 # target to build an object file
 src/Shape.cpp.o:
-	$(MAKE) -f CMakeFiles/lab9.dir/build.make CMakeFiles/lab9.dir/src/Shape.cpp.o
+	$(MAKE) -f CMakeFiles/Final_Project.dir/build.make CMakeFiles/Final_Project.dir/src/Shape.cpp.o
 .PHONY : src/Shape.cpp.o
 
 src/Shape.i: src/Shape.cpp.i
@@ -273,7 +273,7 @@ src/Shape.i: src/Shape.cpp.i
 
 # target to preprocess a source file
 src/Shape.cpp.i:
-	$(MAKE) -f CMakeFiles/lab9.dir/build.make CMakeFiles/lab9.dir/src/Shape.cpp.i
+	$(MAKE) -f CMakeFiles/Final_Project.dir/build.make CMakeFiles/Final_Project.dir/src/Shape.cpp.i
 .PHONY : src/Shape.cpp.i
 
 src/Shape.s: src/Shape.cpp.s
@@ -282,7 +282,7 @@ src/Shape.s: src/Shape.cpp.s
 
 # target to generate assembly for a file
 src/Shape.cpp.s:
-	$(MAKE) -f CMakeFiles/lab9.dir/build.make CMakeFiles/lab9.dir/src/Shape.cpp.s
+	$(MAKE) -f CMakeFiles/Final_Project.dir/build.make CMakeFiles/Final_Project.dir/src/Shape.cpp.s
 .PHONY : src/Shape.cpp.s
 
 src/Terrain.o: src/Terrain.cpp.o
@@ -291,7 +291,7 @@ src/Terrain.o: src/Terrain.cpp.o
 
 # target to build an object file
 src/Terrain.cpp.o:
-	$(MAKE) -f CMakeFiles/lab9.dir/build.make CMakeFiles/lab9.dir/src/Terrain.cpp.o
+	$(MAKE) -f CMakeFiles/Final_Project.dir/build.make CMakeFiles/Final_Project.dir/src/Terrain.cpp.o
 .PHONY : src/Terrain.cpp.o
 
 src/Terrain.i: src/Terrain.cpp.i
@@ -300,7 +300,7 @@ src/Terrain.i: src/Terrain.cpp.i
 
 # target to preprocess a source file
 src/Terrain.cpp.i:
-	$(MAKE) -f CMakeFiles/lab9.dir/build.make CMakeFiles/lab9.dir/src/Terrain.cpp.i
+	$(MAKE) -f CMakeFiles/Final_Project.dir/build.make CMakeFiles/Final_Project.dir/src/Terrain.cpp.i
 .PHONY : src/Terrain.cpp.i
 
 src/Terrain.s: src/Terrain.cpp.s
@@ -309,7 +309,7 @@ src/Terrain.s: src/Terrain.cpp.s
 
 # target to generate assembly for a file
 src/Terrain.cpp.s:
-	$(MAKE) -f CMakeFiles/lab9.dir/build.make CMakeFiles/lab9.dir/src/Terrain.cpp.s
+	$(MAKE) -f CMakeFiles/Final_Project.dir/build.make CMakeFiles/Final_Project.dir/src/Terrain.cpp.s
 .PHONY : src/Terrain.cpp.s
 
 src/Texture.o: src/Texture.cpp.o
@@ -318,7 +318,7 @@ src/Texture.o: src/Texture.cpp.o
 
 # target to build an object file
 src/Texture.cpp.o:
-	$(MAKE) -f CMakeFiles/lab9.dir/build.make CMakeFiles/lab9.dir/src/Texture.cpp.o
+	$(MAKE) -f CMakeFiles/Final_Project.dir/build.make CMakeFiles/Final_Project.dir/src/Texture.cpp.o
 .PHONY : src/Texture.cpp.o
 
 src/Texture.i: src/Texture.cpp.i
@@ -327,7 +327,7 @@ src/Texture.i: src/Texture.cpp.i
 
 # target to preprocess a source file
 src/Texture.cpp.i:
-	$(MAKE) -f CMakeFiles/lab9.dir/build.make CMakeFiles/lab9.dir/src/Texture.cpp.i
+	$(MAKE) -f CMakeFiles/Final_Project.dir/build.make CMakeFiles/Final_Project.dir/src/Texture.cpp.i
 .PHONY : src/Texture.cpp.i
 
 src/Texture.s: src/Texture.cpp.s
@@ -336,7 +336,7 @@ src/Texture.s: src/Texture.cpp.s
 
 # target to generate assembly for a file
 src/Texture.cpp.s:
-	$(MAKE) -f CMakeFiles/lab9.dir/build.make CMakeFiles/lab9.dir/src/Texture.cpp.s
+	$(MAKE) -f CMakeFiles/Final_Project.dir/build.make CMakeFiles/Final_Project.dir/src/Texture.cpp.s
 .PHONY : src/Texture.cpp.s
 
 src/WindowManager.o: src/WindowManager.cpp.o
@@ -345,7 +345,7 @@ src/WindowManager.o: src/WindowManager.cpp.o
 
 # target to build an object file
 src/WindowManager.cpp.o:
-	$(MAKE) -f CMakeFiles/lab9.dir/build.make CMakeFiles/lab9.dir/src/WindowManager.cpp.o
+	$(MAKE) -f CMakeFiles/Final_Project.dir/build.make CMakeFiles/Final_Project.dir/src/WindowManager.cpp.o
 .PHONY : src/WindowManager.cpp.o
 
 src/WindowManager.i: src/WindowManager.cpp.i
@@ -354,7 +354,7 @@ src/WindowManager.i: src/WindowManager.cpp.i
 
 # target to preprocess a source file
 src/WindowManager.cpp.i:
-	$(MAKE) -f CMakeFiles/lab9.dir/build.make CMakeFiles/lab9.dir/src/WindowManager.cpp.i
+	$(MAKE) -f CMakeFiles/Final_Project.dir/build.make CMakeFiles/Final_Project.dir/src/WindowManager.cpp.i
 .PHONY : src/WindowManager.cpp.i
 
 src/WindowManager.s: src/WindowManager.cpp.s
@@ -363,7 +363,7 @@ src/WindowManager.s: src/WindowManager.cpp.s
 
 # target to generate assembly for a file
 src/WindowManager.cpp.s:
-	$(MAKE) -f CMakeFiles/lab9.dir/build.make CMakeFiles/lab9.dir/src/WindowManager.cpp.s
+	$(MAKE) -f CMakeFiles/Final_Project.dir/build.make CMakeFiles/Final_Project.dir/src/WindowManager.cpp.s
 .PHONY : src/WindowManager.cpp.s
 
 src/main.o: src/main.cpp.o
@@ -372,7 +372,7 @@ src/main.o: src/main.cpp.o
 
 # target to build an object file
 src/main.cpp.o:
-	$(MAKE) -f CMakeFiles/lab9.dir/build.make CMakeFiles/lab9.dir/src/main.cpp.o
+	$(MAKE) -f CMakeFiles/Final_Project.dir/build.make CMakeFiles/Final_Project.dir/src/main.cpp.o
 .PHONY : src/main.cpp.o
 
 src/main.i: src/main.cpp.i
@@ -381,7 +381,7 @@ src/main.i: src/main.cpp.i
 
 # target to preprocess a source file
 src/main.cpp.i:
-	$(MAKE) -f CMakeFiles/lab9.dir/build.make CMakeFiles/lab9.dir/src/main.cpp.i
+	$(MAKE) -f CMakeFiles/Final_Project.dir/build.make CMakeFiles/Final_Project.dir/src/main.cpp.i
 .PHONY : src/main.cpp.i
 
 src/main.s: src/main.cpp.s
@@ -390,7 +390,7 @@ src/main.s: src/main.cpp.s
 
 # target to generate assembly for a file
 src/main.cpp.s:
-	$(MAKE) -f CMakeFiles/lab9.dir/build.make CMakeFiles/lab9.dir/src/main.cpp.s
+	$(MAKE) -f CMakeFiles/Final_Project.dir/build.make CMakeFiles/Final_Project.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
 src/tiny_obj_loader.o: src/tiny_obj_loader.cpp.o
@@ -399,7 +399,7 @@ src/tiny_obj_loader.o: src/tiny_obj_loader.cpp.o
 
 # target to build an object file
 src/tiny_obj_loader.cpp.o:
-	$(MAKE) -f CMakeFiles/lab9.dir/build.make CMakeFiles/lab9.dir/src/tiny_obj_loader.cpp.o
+	$(MAKE) -f CMakeFiles/Final_Project.dir/build.make CMakeFiles/Final_Project.dir/src/tiny_obj_loader.cpp.o
 .PHONY : src/tiny_obj_loader.cpp.o
 
 src/tiny_obj_loader.i: src/tiny_obj_loader.cpp.i
@@ -408,7 +408,7 @@ src/tiny_obj_loader.i: src/tiny_obj_loader.cpp.i
 
 # target to preprocess a source file
 src/tiny_obj_loader.cpp.i:
-	$(MAKE) -f CMakeFiles/lab9.dir/build.make CMakeFiles/lab9.dir/src/tiny_obj_loader.cpp.i
+	$(MAKE) -f CMakeFiles/Final_Project.dir/build.make CMakeFiles/Final_Project.dir/src/tiny_obj_loader.cpp.i
 .PHONY : src/tiny_obj_loader.cpp.i
 
 src/tiny_obj_loader.s: src/tiny_obj_loader.cpp.s
@@ -417,7 +417,7 @@ src/tiny_obj_loader.s: src/tiny_obj_loader.cpp.s
 
 # target to generate assembly for a file
 src/tiny_obj_loader.cpp.s:
-	$(MAKE) -f CMakeFiles/lab9.dir/build.make CMakeFiles/lab9.dir/src/tiny_obj_loader.cpp.s
+	$(MAKE) -f CMakeFiles/Final_Project.dir/build.make CMakeFiles/Final_Project.dir/src/tiny_obj_loader.cpp.s
 .PHONY : src/tiny_obj_loader.cpp.s
 
 # Help Target
@@ -426,9 +426,9 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... lab9"
+	@echo "... edit_cache"
+	@echo "... Final_Project"
 	@echo "... ext/glad/src/glad.o"
 	@echo "... ext/glad/src/glad.i"
 	@echo "... ext/glad/src/glad.s"
